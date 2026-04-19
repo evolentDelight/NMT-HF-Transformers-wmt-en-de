@@ -60,10 +60,10 @@ Purpose:
 - Validation subset: 1,000
 - Test subset: 785
 - Epochs: 1
-- Validation loss: 1.4933
-- Validation BLEU: 29.07
+- Validation loss: 1.4932
+- Validation BLEU: 29.03
 - Test loss: 1.4003
-- Test BLEU: 29.29
+- Test BLEU: 29.34
 
 ```
 Validation metrics: {'eval_loss': 1.493253469467163, 'eval_bleu': 29.073198819729775, 'eval_runtime': 40.4334, 'eval_samples_per_second': 24.732, 'eval_steps_per_second': 3.092, 'epoch': 1.0}

@@ -12,7 +12,7 @@ from transformers import (
     Seq2SeqTrainingArguments,
 )
 
-DATA_DIR = Path("data/deu-eng-fixed")
+DATA_DIR = Path("data/deu-eng")
 CHECKPOINT = "Helsinki-NLP/opus-mt-en-de"
 OUTPUT_DIR = "outputs/hf_ende_baseline_v1"
 

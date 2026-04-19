@@ -2,7 +2,7 @@ from pathlib import Path
 from datasets import Dataset, DatasetDict
 
 
-DATA_DIR = Path("data/deu-eng-fixed")
+DATA_DIR = Path("data/deu-eng")
 
 
 def read_parallel_split(prefix: str) -> list[dict]:

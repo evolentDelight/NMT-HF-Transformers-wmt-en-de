@@ -4,7 +4,7 @@ from datasets import Dataset, DatasetDict
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 
-DATA_DIR = Path("data/deu-eng-fixed")
+DATA_DIR = Path("data/deu-eng")
 CHECKPOINT = "Helsinki-NLP/opus-mt-en-de"
 
 
