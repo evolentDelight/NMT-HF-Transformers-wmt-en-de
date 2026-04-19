@@ -1,0 +1,41 @@
+Challenge: Hidden Unicode line separators broke JoeyNMT plain-text loading
+
+Issue
+- JoeyNMT raised an AssertionError while loading the parallel training data.
+- Raw line counts looked correct with wc -l, but JoeyNMT still saw unequal source/target lengths.
+
+Root cause
+- JoeyNMT loads plain text using Python's splitlines().
+- The original train.eng file contained three embedded Unicode line separator characters (U+2028).
+- splitlines() treated those characters as real line breaks.
+- As a result, JoeyNMT read more English lines than German lines, causing source-target misalignment.
+
+How we diagnosed it
+- Verified raw line counts for train/dev/test with wc -l.
+- Checked blank lines and found none.
+- Recounted lines using Python's splitlines(), matching JoeyNMT's loader behavior.
+- Found:
+  - train.eng had more lines than train.deu
+  - train.eng contained 3 U+2028 characters
+  - train.deu contained none
+
+How we fixed it
+- Rebuilt the dataset into a clean folder.
+- Replaced U+2028/U+2029 with normal spaces before line splitting.
+- Used splitlines() to normalize line handling consistently.
+- Truncated source and target training lines to the same aligned minimum length before writing.
+- Copied dev/test unchanged.
+- Verified the repaired files had matching line counts under splitlines().
+
+Final repaired dataset
+- data/deu-eng-fixed/train.eng
+- data/deu-eng-fixed/train.deu
+- data/deu-eng-fixed/dev.eng
+- data/deu-eng-fixed/dev.deu
+- data/deu-eng-fixed/test.eng
+- data/deu-eng-fixed/test.deu
+
+Why this matters
+- wc -l counts only newline characters.
+- Python splitlines() also splits on Unicode line separators like U+2028.
+- For JoeyNMT plain-text datasets, verification should match the loader's behavior, not only shell line counts.
