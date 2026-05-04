@@ -1,0 +1,14 @@
+{
+  "run_id": "baseline_helsinki",
+  "model_name": "Helsinki-NLP/opus-mt-en-de",
+  "split": "dev",
+  "sacrebleu": 32.96109890363845,
+  "num_examples": 2000,
+  "num_beams": 4,
+  "max_new_tokens": 128,
+  "length_penalty": 1.0,
+  "early_stopping": true,
+  "max_source_length": 128,
+  "checkpoint_path": "outputs\\checkpoints\\baseline_helsinki",
+  "notes": "Pretrained Helsinki-NLP/opus-mt-en-de model evaluated directly on dev set; no fine-tuning."
+}

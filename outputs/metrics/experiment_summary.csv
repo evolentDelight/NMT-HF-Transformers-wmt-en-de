@@ -1,0 +1,9 @@
+run_id,changed_variable,training_subset_size,learning_rate,batch_size,epochs,beam_size,dev_sacrebleu,checkpoint_path,notes,dev_vs_baseline
+exp01_subset10000_lr=2e-5,see notes,10000,2e-05,16.0,3,4,32.23431238193717,outputs\checkpoints\exp01_subset10000_lr=2e-5,Fine-tuned Helsinki model evaluated on dev set.,-0.7267865217012783
+exp02_subset10000_lr=2e-5_epoch1,see notes,10000,2e-05,16.0,1,4,32.7813779033089,outputs\checkpoints\exp02_subset10000_lr=2e-5_epoch1,Fine-tuned Helsinki model evaluated on dev set.,-0.1797210003295504
+exp03_subset10000_lr=1e-5_epoch1,see notes,10000,1e-05,16.0,1,4,32.94303652331287,outputs\checkpoints\exp03_subset10000_lr=1e-5_epoch1,Fine-tuned Helsinki model evaluated on dev set.,-0.0180623803255812
+exp04_subset10000_lr=5e-6_epoch1,see notes,10000,5e-06,16.0,1,4,33.019479696949695,outputs\checkpoints\exp04_subset10000_lr=5e-6_epoch1,Fine-tuned Helsinki model evaluated on dev set.,0.0583807933112439
+exp05_subset10000_lr=3e-6_epoch1,fine-tuning enabled,10000,3e-06,16.0,1,4,33.09336958046693,outputs\checkpoints\exp05_subset10000_lr=3e-6_epoch1,Fine-tuned pretrained Helsinki model on training subset.,0.132270676828476
+exp06_subset20000_lr=3e-6_epoch1,fine-tuning enabled,20000,3e-06,16.0,1,4,33.00557459332366,outputs\checkpoints\exp06_subset20000_lr=3e-6_epoch1,Fine-tuned pretrained Helsinki model on training subset.,0.0444756896852069
+baseline_helsinki,none - pretrained baseline,0,,,0,4,32.96109890363845,outputs\checkpoints\baseline_helsinki,Pretrained Helsinki-NLP/opus-mt-en-de model evaluated directly on dev set; no fine-tuning.,0.0
+exp06_subset10000_lr=3e-6_epoch1_Beams5,fine-tuning enabled,10000,3e-06,16.0,1,5,33.219615020745316,outputs\checkpoints\exp06_subset10000_lr=3e-6_epoch1_Beams5,Fine-tuned pretrained Helsinki model on training subset.,0.25851611710686484

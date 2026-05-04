@@ -1,0 +1,15 @@
+Configuration Item,Value
+model_type,marian
+architectures,['MarianMTModel']
+vocab_size,58101
+encoder_layers,6
+decoder_layers,6
+encoder_attention_heads,8
+decoder_attention_heads,8
+d_model,512
+encoder_ffn_dim,2048
+decoder_ffn_dim,2048
+max_position_embeddings,512
+pad_token_id,58100
+eos_token_id,0
+decoder_start_token_id,58100

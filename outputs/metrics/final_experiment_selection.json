@@ -1,0 +1,8 @@
+{
+  "final_selected_run_id": "exp06_subset10000_lr=3e-6_epoch1_Beams5",
+  "final_selected_checkpoint_dir": "outputs\\checkpoints\\exp06_subset10000_lr=3e-6_epoch1_Beams5",
+  "selection_metric": "dev_sacrebleu",
+  "selected_dev_sacrebleu": 33.21961502074532,
+  "baseline_dev_sacrebleu": 32.96109890363845,
+  "notes": "Final model selected using development SacreBLEU. The test set was not used for model selection."
+}

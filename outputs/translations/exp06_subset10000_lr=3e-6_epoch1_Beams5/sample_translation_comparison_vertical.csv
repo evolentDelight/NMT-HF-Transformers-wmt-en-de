@@ -1,0 +1,21 @@
+example_id,field,text
+0,Source English,The Beauty of Munich 2018: the Beauty of Munich 2018 in Hvar: Nine dates
+0,Reference German,Schöne Münchnerin 2018: Schöne Münchnerin 2018 in Hvar: Neun Dates
+0,Baseline Prediction,Die Schönheit Münchens 2018: Die Schönheit Münchens 2018 in Hvar: Neun Termine
+0,Fine-Tuned Prediction,Die Schönheit Münchens 2018: Die Schönheit Münchens 2018 in Hvar: Neun Termine
+1,Source English,"From A-Z, updated on 04/05/2018 at 11:11"
+1,Reference German,"Von az, aktualisiert am 04.05.2018 um 11:11"
+1,Baseline Prediction,"Von A-Z, aktualisiert am 04/05/2018 um 11:11"
+1,Fine-Tuned Prediction,"Von A-Z, aktualisiert am 04/05/2018 um 11:11"
+2,Source English,"Yes, she wants to..."
+2,Reference German,"Ja, sie will..."
+2,Baseline Prediction,"Ja, sie will..."
+2,Fine-Tuned Prediction,"Ja, sie will..."
+3,Source English,"to become ""The Beauty of Munich"" in 2018!"
+3,Reference German,"""Schöne Münchnerin"" 2018 werden!"
+3,Baseline Prediction,"2018 zur ""Schönheit Münchens""!"
+3,Fine-Tuned Prediction,"2018 ""Die Schönheit Münchens"" zu werden!"
+4,Source English,"In the afternoon there is another surprise waiting for our contestants: they will be competing for the romantic candlelight photo shoot at MY SOLARIS not alone, but together with a male-model Fabian!"
+4,Reference German,"Am Nachmittag wartet erneut eine Überraschung auf unsere Kandidatinnen: sie werden das romantische Candlelight-Shooting vor der MY SOLARIS nicht alleine bestreiten, sondern an der Seite von Male-Model Fabian!"
+4,Baseline Prediction,"Am Nachmittag wartet eine weitere Überraschung auf unsere Teilnehmer: Sie werden für das romantische Kerzenlicht-Fotoshooting bei MY SOLARIS nicht allein, sondern zusammen mit einem Herrenmodel Fabian antreten!"
+4,Fine-Tuned Prediction,"Am Nachmittag wartet eine weitere Überraschung auf unsere Teilnehmer: Sie werden um das romantische Kerzenlicht-Fotoshooting bei MY SOLARIS nicht allein, sondern zusammen mit einem männlichen Fabian kämpfen!"
