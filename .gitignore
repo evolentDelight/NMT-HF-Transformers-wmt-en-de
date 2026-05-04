@@ -1,3 +1,7 @@
 data
 
 outputs
+
+old_outputs
+
+.ipynb_checkpoints
