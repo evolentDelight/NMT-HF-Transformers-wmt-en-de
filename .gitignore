@@ -1,7 +1,9 @@
 data
 
-outputs
-
 old_outputs
 
 .ipynb_checkpoints
+
+*.safetensors
+
+main.ipynb
